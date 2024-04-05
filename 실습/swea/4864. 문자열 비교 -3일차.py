@@ -17,3 +17,16 @@ ZZZZAZBCZZZZZ
 
 문자열이 일치하지 않으므로 0을 출력.
 '''
+
+T = int(input())
+# 여러개의 테스트 케이스가 주어지므로, 각각을 처리합니다.
+for test_case in range(1, T + 1):
+    target = input()
+    text = input()
+
+    if target in text :
+        print("#%d 1"%(test_case))
+
+    else:
+        print("#%d 0"%(test_case))
+
