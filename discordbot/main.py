@@ -1,8 +1,8 @@
 import discord
 from datetime import datetime
 
-TOKEN = 'MTIzMDUzNzQ1NDExMzc4ODAwNQ.GF8HC_.P-FXjkXEKWlztaguyubjCi_QTkosQKHs_-jvqY'
-CHANNEL_ID = '1230536737214959709'
+TOKEN = 'secret'
+CHANNEL_ID = 'secret'
 
 class MyClient(discord.Client):
     async def on_ready(self):
