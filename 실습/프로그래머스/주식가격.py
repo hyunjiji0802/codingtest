@@ -2,6 +2,7 @@ def solution(p):
     p.reverse()
     p = [[i, j] for i, j in
          zip(p, range(len(p)-1,-1,-1))]  # p[][0] 은 주식 가격,  p[][1]는 인덱스 정보
+
     s = []  # 스택에 차례로 담으며 가격 비교
     ans = [0 for _ in range(len(p))]
 
@@ -25,5 +26,16 @@ def solution(p):
         st_price = s.pop()
         ans[st_price[1]] = len(ans)-st_price[1]-1  # 나머지 정보 저장
     return ans
+# print(solution([1,2,3,2,3]))
+
+def solution2(p):
+    t = 0
+    answer = []
+    for i in range(len(p)-1):
+        if p[i] >= p[i+1]:
+            t+=1
+        else:
+            pass
+
 print(solution([1,2,3,2,3]))
 # print(solution([1,2,3,1,2,0]))
