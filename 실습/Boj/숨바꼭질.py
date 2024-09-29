@@ -10,7 +10,7 @@ def bfs(n,k,l):
     if n>=k:
         return n-k #걸어서 가야함
     while deq:
-        # print(deq)
+        print(deq)
         cur,cur_t = deq.popleft() #큐에서 하나 꺼냄
         if cur == k:  # 같으면 현재 시간 반환
             return cur_t

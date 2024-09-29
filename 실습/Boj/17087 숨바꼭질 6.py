@@ -19,6 +19,7 @@ for i in range(len(nlist)):
     else :
         nlist[i]=nlist[i]-s
 g=max(nlist)
+
 while k<n-1 :
 
     if k==0:
