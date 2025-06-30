@@ -1,0 +1,5 @@
+N = int(input())
+l = list(map(int, input().split()))
+M = int(input())
+cnt = l.count(M)
+print(cnt)
